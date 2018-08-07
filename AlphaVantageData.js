@@ -24,6 +24,10 @@
             id: "close",
             alias: "Close",
             dataType: tableau.dataTypeEnum.string
+        }, {
+            id: "volume",
+            alias: "Volume",
+            dataType: tableau.dataTypeEnum.string
         }];
     
         var tableSchema = {
@@ -55,6 +59,7 @@
                     expected.high = actual['2. high'] ? actual['2. high'] : '--'
                     expected.low = actual['3. low'] ? actual['3. low'] : '--'
                     expected.close = actual['4. close'] ? actual['4. close'] : '--'
+                    expected.close = actual['5. volume'] ? actual['5. volume'] : '--'
                     expected.date = key 
                     allRows.push(expected)
                     }
